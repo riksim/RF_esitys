@@ -15,7 +15,6 @@ Add Employee
 Add Employee Template          
     [Documentation]              Template for verifying adding an employee                            
     [Arguments]                  ${first_name}    ${last_name}
-
     Clear Employees List         
     Add Employee                 first_name=${first_name}  last_name=${last_name}
     ${output} =                  Retrieve Employees List
