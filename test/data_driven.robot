@@ -19,3 +19,4 @@ Add Employee Template
     Add Employee                 first_name=${first_name}  last_name=${last_name}
     ${output} =                  Retrieve Employees List
     Should Be Equal              ${output}        ['${first_name} ${last_name}']
+    [Teardown]                   Clear Employees List
