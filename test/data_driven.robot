@@ -1,9 +1,8 @@
 *** Settings ***   
 Documentation                    Test the employee Python script, data driven approach
-Library                          OperatingSystem
 Resource                         ./data/employee.resource
 
-*** Test Cases ***                             
+*** Test Cases ***
 Empty Employees List           
     [Documentation]              Verify the output of an empty employees list
     [Setup]                      Clear Employees List
