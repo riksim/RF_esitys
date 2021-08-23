@@ -1,7 +1,7 @@
 *** Settings ***   
 Documentation                    Test the employee Python script, data driven approach
 Library                          OperatingSystem
-Library                          DataDriver  file=data_driver.csv  dialect=unix
+Library                          DataDriver        file=data_driver.csv        dialect=unix
 Test Setup                       Clear Employees List
 Test Teardown                    Clear Employees List
 Test Template                    Add Employee Template
