@@ -3,7 +3,7 @@
 | Library            | OperatingSystem
 
 | *** Variables ***  |
-| ${APPLICATION}     | python3 ../employee.py
+| ${APPLICATION}     | python ../employee.py
 
 | *** Keywords ***              |
 | Clear Employees List          | [Documentation] | Clears the list of employees
