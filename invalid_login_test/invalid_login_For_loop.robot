@@ -17,7 +17,7 @@ invalid login
 
 
 # LUO LISTAN YLLÄOLEVISTA LISTOISTA
-    @{LIST} =       Create List    ${INVALID1}    ${INVALID2}    ${INVALID3}    ${INVALID4}
+    @{LIST} =       Create List    ${INVALID1}    ${INVALID2}    ${INVALID3}    ${INVALID4}    ${INVALID5}    ${INVALID6}
 #KÄY LÄPI LISTAT
     FOR    ${INVALID}    IN    @{LIST}
             Run Keyword And Continue On Failure    Login with ${INVALID}[0] and ${INVALID}[1] should fail
