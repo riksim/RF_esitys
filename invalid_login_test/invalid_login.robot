@@ -4,7 +4,7 @@ Suite Setup       Open browser to login page
 Test Template     Login with invalid credentials should fail
 Suite Teardown    Close Browser
 
-     
+    
 
 *** Test Cases ***                Username        Password
 # VALID USERNAME

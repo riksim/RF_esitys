@@ -6,13 +6,21 @@ Suite Teardown    Close Browser
 
 *** Test Cases ***
 
+# LUO LISTAN KÄYTTÄJÄTUNNUKSISTA JA SALASANOISTA
 invalid login
-    @{CUSTOMER1} =  Create List     demo        invalid
-    @{CUSTOMER2} =  Create List     invalid        mode
+    @{INVALID1} =  Create List     demo        invalid
+    @{INVALID2} =  Create List     invalid        mode
+    @{INVALID3} =  Create List     demo        ' '
+    @{INVALID4} =  Create List     ' '         mode
+    @{INVALID5} =  Create List     ' '         mode
+    @{INVALID6} =  Create List     demo        ' '
 
-    @{LIST} =       Create List    ${CUSTOMER1}    ${CUSTOMER2}
-    FOR    ${CUSTOMER}    IN    @{LIST}
-            Run Keyword And Continue On Failure    Login with ${CUSTOMER}[0] and ${CUSTOMER}[1] should fail
+
+# LUO LISTAN YLLÄOLEVISTA LISTOISTA
+    @{LIST} =       Create List    ${INVALID1}    ${INVALID2}    ${INVALID3}    ${INVALID4}
+#KÄY LÄPI LISTAT
+    FOR    ${INVALID}    IN    @{LIST}
+            Run Keyword And Continue On Failure    Login with ${INVALID}[0] and ${INVALID}[1] should fail
     END
 
 *** Keywords ***
