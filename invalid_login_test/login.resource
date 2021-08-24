@@ -33,25 +33,5 @@ Submit credentials
 Welcome page should open
     Title Should Be    Welcome Page
 
-    # Löydetään CSS h1 locatorin avulla.
-    Element Text Should Be    tag=h1                    Welcome Page
-    Element Text Should Be    css:h1                    Welcome Page
-    Element Text Should Be    css:#container h1         Welcome Page
-    Element Text Should Be    xpath:/html/body/div/h1   Welcome Page
-    Element Text Should Be    //h1                      Welcome Page
-    Element Text Should Be    //*[@id= 'container']/h1   Welcome Page
-
-    # Assign variables based on keyword return values
-    # and using Builtin keywords for validating them
-    ${title} =    Get Title
-    Should Be Equal        ${title}    Welcome Page
-    Should Start With      ${title}    Welcome
-    Should Match           ${title}    Wel* P???
-    Should Match Regexp    ${title}    Wel.* P...
-
-    # Named argument syntax
-    Should Be Equal        ${title}    WELCOME PAGE    ignore_case=True
-    Should Be Equal        first=${title}     ignore_case=True     second=WELCOME PAGE    
-
 Navigate to login page
     Go To    ${LOGIN URL}

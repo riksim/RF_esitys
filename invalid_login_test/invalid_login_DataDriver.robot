@@ -7,7 +7,7 @@ Suite Teardown    Close Browser
 
 
 *** Test Cases ***
-Invalid logins    ${username}    ${password}
+Invalid logins using ${username} and ${password}    Default    UserData  
 
 
 
