@@ -1,5 +1,5 @@
 *** Settings ***
-Library           DataDriver        file=invalid_login_DataDriver.csv    sheet_name=invalid_login_DataDriver    encoding=utf_8    dialect=Excel-EU      
+Library           DataDriver        file=invalid_login_DataDriver.csv    sheet_name=invalid_login_DataDriver    encoding=utf_8    dialect=Excel-EU    optimize_pabot=Equal     
 Resource          login.resource
 Suite Setup       Open browser to login page
 Test Template     Login with invalid credentials should fail

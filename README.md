@@ -11,3 +11,7 @@ pip install --upgrade robotframework-datadriver
 pip install --upgrade robotframework-datadriver[XLS]
 
 
+# Jos haluaa käyttää pabotia testien kanssa
+pip install -U robotframework-pabot
+
+
