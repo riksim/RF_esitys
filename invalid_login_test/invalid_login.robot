@@ -17,7 +17,7 @@ Invalid username - empty pw       invalid         ${EMPTY}
 # EMPTY USERNAME
 Empty username - valid pw         ${EMPTY}        ${VALID_PASSWORD}
 Empty password                    ${EMPTY}        ${EMPTY}
-Empty username- invalid pw          ${EMPTY}        invalid
+Empty username- invalid pw        ${EMPTY}        invalid
 
 
 *** Keywords ***
