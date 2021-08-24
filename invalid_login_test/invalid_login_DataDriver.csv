@@ -1,0 +1,9 @@
+﻿*** Test Cases ***;${username};${password};[Tags];[Documentation]
+Invalid Login;Valid;Invalid;2,3,foo;This test case has the Tags 2,3 and foo
+;Valid;Empty;1,2,3,4;This test case has a generated name based on template name.
+;Invalid;Valid;;
+;Empty;Valid;foo;
+;Invalid;Invalid;foo;
+;Invalid;Empty;foo;
+;Empty;Invalid;;
+;Empty;Empty;;
